@@ -1,0 +1,108 @@
+/* Fondo general con estilo universo */
+ion-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 16px;
+    background-image: url('https://cdn.pixabay.com/photo/2015/11/07/11/45/space-1031194_1280.jpg'); /* URL de una imagen de universo */
+    background-size: cover; /* Asegura que cubra todo el fondo */
+    background-position: center; /* Centra la imagen */
+    background-attachment: fixed; /* Mantiene el fondo fijo al hacer scroll */
+    color: white; /* Texto blanco para contrastar */
+  }
+  
+  /* Estilo para el título */
+  ion-title {
+    font-size: 5vw; /* Tamaño relativo al ancho de la pantalla */
+    max-font-size: 24px; /* Límite máximo para pantallas grandes */
+    font-style: italic; /* Texto en cursiva */
+    color:darkblue; /* Color turquesa */
+    text-align: center; /* Centrar el título */
+    font-weight: bold;
+    margin-bottom: 16px; /* Separación con el contenido inferior */
+  }
+  
+  /* Ajustes para pantallas pequeñas */
+  @media (max-width: 600px) {
+    ion-title {
+      font-size: 6vw; /* Título más grande en pantallas pequeñas */
+    }
+  }
+  
+  /* Lista centralizada y estilizada */
+  ion-list {
+    width: 100%;
+    max-width: 600px; /* Ancho máximo para pantallas grandes */
+    background: rgba(0, 0, 0, 0.7); /* Fondo semitransparente */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra oscura */
+    overflow: hidden;
+  }
+  
+  /* Ítems de la lista */
+  ion-item {
+    --ion-item-background: transparent;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Línea divisoria suave */
+    text-align: center; /* Centrar el contenido */
+    color: white; /* Texto blanco */
+  }
+  
+  /* Último ítem sin borde */
+  ion-item:last-child {
+    border-bottom: none;
+  }
+  
+  /* Miniaturas redondeadas */
+  ion-thumbnail {
+    border-radius: 8px; /* Bordes redondeados */
+    overflow: hidden;
+    width: 64px;
+    height: 64px;
+  }
+  
+  /* Imagen dentro de las miniaturas */
+  ion-thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajuste proporcional */
+  }
+  
+  /* Etiquetas con texto cursivo */
+  ion-label {
+    font-size: 16px;
+    font-style: italic; /* Texto en cursiva */
+    font-weight: 500;
+    color: #ffffff; /* Texto blanco */
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    text-align: center; /* Centra el texto */
+  }
+  
+  /* Botón estilizado */
+  ion-button {
+    --background: #4caf50; /* Color verde */
+    --background-hover: #45a049; /* Hover verde más oscuro */
+    --color: #fff; /* Texto blanco */
+    --border-radius: 8px;
+    --padding-start: 12px;
+    --padding-end: 12px;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  /* Botón responsive para pantallas pequeñas */
+  @media (max-width: 600px) {
+    ion-button {
+      font-size: 12px;
+      --padding-start: 8px;
+      --padding-end: 8px;
+    }
+  }
+  
+  /* Asegura que el contenido no se salga del diseño */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
