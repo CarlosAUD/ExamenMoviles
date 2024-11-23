@@ -22,3 +22,6 @@ Guardado cuando lo pulsan en Cloud Firestore:
 
 ![image](https://github.com/user-attachments/assets/9fc7a816-d77b-4ee2-a68b-7e11716a6c57)
 
+
+
+como mi dispositivo es Ios, no me deja instalarlo y como tengo una computadora con recursos limitados no me permite ejecutar un emulador porque se me caliente y se me reinicia
